@@ -1,0 +1,24 @@
+<html>
+<head>
+    <style>
+        body {background:linear-gradient(to right, green, aqua );font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif}
+    </style>
+</head>
+<body>
+    <h2>Javascript string Methods and loops</h2>
+    <p>Numbers from 1 to 10</p>
+    <p id="result"></p>
+    <script>
+        var num = "";
+        for (let i = 1; i <= 10; i++){
+            num += i + "<br>";
+        }
+        
+        document.getElementById("result").innerHTML = num;
+        
+        var date = new Date();
+        document.write("the random value is " + Math.floor(Math.random() * 100) + "<br>");
+        document.write("Today's date is " + date.getDate());
+    </script>
+</body>
+</html>
