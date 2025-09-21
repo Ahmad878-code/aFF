@@ -1,20 +1,18 @@
 <html>
-    <body>
-        <h2>Javascript string methods</h2>
-        <p>Basic methods</p>
-        <script>
-            var str="AmaZiNg";
-            document.write(str.toUpperCase());
-            document.write("<br>");
-            document.write(str.toLowerCase());
-            document.write("<br>");
-            document.write(str.startsWith('i'));
-            document.write("<br>");
-            //test method -> returns true or false
-            var str1="I learnt about methods";
-            var patt=new RegExp("about");
-            var res=patt.test(str1);
-            document.write(res);
+<body>
+    <h2>Javascript objects and it's properties</h2>
+    <p>There are two different way to access an object property</p>
+    <p>You can use .proprty or ["property"].</p>
+    <p id="demo"></p>
+    <script>
+        //create an object
+        var person = {
+            firstName: "I",
+            age      :20,
+        };
+        //diaplay some data from the object
+        document.getElementById("demo").innerHTML = person.firstName + " is " + person["age"] + " years old.";
+        
         </script>
-    </body>
+</body>
 </html>
